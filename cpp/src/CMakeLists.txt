@@ -1,5 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
 project(iPerfer)
-add_executable(iPerfer)
 target_compile_features(iPerfer PUBLIC cxx_std_23)
+add_executable(iPerfer apps/iPerfer.cpp)
 target_link_libraries(iPerfer spdlog::spdlog cxxopts::cxxopts)
